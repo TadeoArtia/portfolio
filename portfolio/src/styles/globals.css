@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	--color-background: #1c1c1c;
+	--color-foreground: #d1d1d1;
+}
+
+@layer base {
+	* {
+		@apply box-border
+	}
+
+	h1, h2, h3, h4, h5, h6, p{
+		@apply text-foreground
+	}
+
+
+}
